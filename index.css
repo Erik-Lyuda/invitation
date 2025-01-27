@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 @font-face {
   font-family: "Armenia";
   src: url(./fonts/CosiArm.ttf);
@@ -50,6 +53,14 @@ header {
   width: 100%;
   height: 100%;
 }
+.how-to-reach {
+    background: none;
+    padding: 12px 24px;
+    color: #505050;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    border: 2px solid #505050;
+  }
 .line {
   width: 200px;
   height: 2px;
