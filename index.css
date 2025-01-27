@@ -72,7 +72,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Armenia2";
 }
 
 .countdown-title {
@@ -88,6 +87,8 @@ header {
 #countdown p {
   font-weight: 700;
   font-size: clamp(1.5rem, 8vw, 2.5rem);
+  font-family: "Armenia2";
+
 }
 
 #countdown span {
@@ -105,14 +106,8 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  /* font-size: 2rem; */
 }
-.place .time {
-  /* font-size: clamp(2rem, 10vw, 5rem); */
-}
-.place .city {
-  /* font-size: 2.5rem; */
-}
+
 .place .title2 {
   font-family: "Armenia";
 }
