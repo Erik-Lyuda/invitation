@@ -12,9 +12,8 @@
   src: url(./fonts/Dzeragir-Handdrawn.otf);
 }
 
-
 body {
-  font-family: "Armenia";
+  font-family: "Armenia2";
   text-align: center;
   background-color: #c7c7c7;
   color: #505050;
@@ -35,6 +34,11 @@ header {
 .name1,
 .name2 {
   font-size: clamp(1rem, 10vw, 4rem);
+  font-family: "Armenia";
+}
+.date {
+    margin-top: 20px;
+  font-family: "Armenia";
 }
 .photo {
   max-width: 400px;
@@ -57,7 +61,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family:  "Armenia2";
+  font-family: "Armenia2";
 }
 
 .countdown-title {
@@ -73,7 +77,6 @@ header {
 #countdown p {
   font-weight: 700;
   font-size: clamp(1.5rem, 8vw, 2.5rem);
-
 }
 
 #countdown span {
@@ -111,5 +114,5 @@ header {
   height: 100%;
 }
 .wait {
-    margin: 50px 0;
+  margin: 50px 0;
 }
