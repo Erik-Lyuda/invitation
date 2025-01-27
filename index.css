@@ -7,9 +7,11 @@
   font-family: "Armenia";
   src: url(./fonts/CosiArm.ttf);
 }
-a {
-  text-decoration: none;
+@font-face {
+  font-family: "Armenia2";
+  src: url(./fonts/Dzeragir-Handdrawn.otf);
 }
+
 
 body {
   font-family: "Armenia";
@@ -55,10 +57,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family:  "Armenia2";
 }
 
 .countdown-title {
-  font-size: clamp(1rem, 5vw, 2.5rem);
+  font-size: clamp(1.5rem, 8vw, 2.5rem);
   text-align: start;
 }
 #countdown {
@@ -69,7 +72,8 @@ header {
 }
 #countdown p {
   font-weight: 700;
-  font-size: clamp(1rem, -1.5rem + 10vw, 3rem);
+  font-size: clamp(1.5rem, 8vw, 2.5rem);
+
 }
 
 #countdown span {
