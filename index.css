@@ -58,22 +58,22 @@ header {
 }
 
 .countdown-title {
-  font-size: clamp(1.5rem, 6vw, 2.5rem);
+  font-size: clamp(1rem, 5vw, 2.5rem);
   text-align: start;
 }
 #countdown {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   align-items: center;
   font-family: "Armenia";
 }
 #countdown p {
   font-weight: 700;
-  /* font-size: clamp(3rem, -1.5rem + 10vw, 5rem); */
+  font-size: clamp(1rem, -1.5rem + 10vw, 3rem);
 }
 
 #countdown span {
-  /* font-size: clamp(2rem, -1.5rem + 10vw, 3rem); */
+  font-size: clamp(1rem, -1.5rem + 10vw, 2rem);
 }
 
 .countdown-item {
@@ -87,11 +87,10 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  font-size: clamp(2rem, 5vw, 2rem);
+  /* font-size: 2rem; */
 }
 .place .time {
-  font-size: clamp(2rem, 5vw, 5rem);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* font-size: clamp(2rem, 10vw, 5rem); */
 }
 .place .city {
   /* font-size: 2.5rem; */
