@@ -16,7 +16,7 @@ a {
 }
 
 body {
-  font-family: "Armenia";
+  font-family: "Armenia2";
   text-align: center;
   background-color: #e7e7e7;
   color: #505050;
@@ -24,7 +24,6 @@ body {
 }
 
 .layout {
-  /* padding: 20px; */
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -41,15 +40,19 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 0;
-  color: #e5e7eb;
+  color: #323232;
 }
 .names {
   font-size: clamp(1rem, 10vw, 4rem);
+  text-shadow: #e5e7eb 1px 0 10px;
 }
 .date {
-  font-size: clamp(1rem, 10vw, 4rem);
+  font-size: clamp(1rem, 15vw, 5rem);
   margin-top: 20px;
-  font-family: "Armenia";
+  text-shadow: #e5e7eb 1px 0 10px;
+}
+.text {
+  font-size: clamp(1rem, 10vw, 4rem);
 }
 
 .plan-title {
@@ -88,7 +91,8 @@ header {
   margin: 50px 0;
 }
 .time {
-  color:  #b69779
+  color:  #b69779;
+  margin-top: 20px;
 }
 
 .countdown-sec {
