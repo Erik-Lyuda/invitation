@@ -40,3 +40,25 @@ const interval = setInterval(() => {
     }
   }, 1000);
 
+  document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("zUojn6FauoICty7qS"); 
+
+    document.getElementById("sendEmail").addEventListener("click", function () {
+      let guestName = document.querySelector('#guestName')
+      let yesOrNo = document.querySelector('input[name="yesno"]:checked').value
+        let templateParams = {
+            name: guestName.value,
+            message: `${yesOrNo === "yes" ? "Գալու ենք " : "չենք կարողանա գալ"}`
+        };
+        console.log(templateParams);
+
+        emailjs.send("service_1ssajei", "template_koczw9e", templateParams)
+            .then(function (response) {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("Նամակը հաջողությամբ ուղարկվեց!");
+            }, function (error) {
+                console.log("FAILED...", error);
+                alert("Սխալ տեղի ունեցավ!");
+            });
+    });
+});

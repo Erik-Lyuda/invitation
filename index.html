@@ -22,56 +22,74 @@
 
         <h2 class="plan-title">Օրվա ծրագիր</h2>
 
-            <div class="place">
-                <h2 class="time">15:00</h2>
-                <div class="city">Սուրբ Հռիփսիմե եկեղեցի</div>
-                <span class="address">հասցե՝ Էջմիածին
-                    Մաշտոցի փողոց</span>
-                <div class="place-photo">
-                    <img src="./images/St._Hripsime_church․jpg.jpg" alt="">
-                </div>
-                <a href="https://yandex.com/maps/-/CHa3FNKO" target="_blank" class="how-to-reach">
-                    Ինչպես հասնել
-                </a>
+        <div class="place">
+            <h2 class="time">15:00</h2>
+            <div class="city">Սուրբ Հռիփսիմե եկեղեցի</div>
+            <span class="address">հասցե՝ Էջմիածին
+                Մաշտոցի փողոց</span>
+            <div class="place-photo">
+                <img src="./images/St._Hripsime_church․jpg.jpg" alt="">
             </div>
+            <a href="https://yandex.com/maps/-/CHa3FNKO" target="_blank" class="how-to-reach">
+                Ինչպես հասնել
+            </a>
+        </div>
 
-            <div class="place">
+        <div class="place">
 
-                <h2 class="time">16:30</h2>
-                <div class="city">Դվին Ռեստորանային համալիր
+            <h2 class="time">16:30</h2>
+            <div class="city">Դվին Ռեստորանային համալիր
+            </div>
+            <span class="address">հասցե՝ Էջմիածին
+                Աշտարակի խճուղի, 1 շենք</span>
+            <div class="place-photo">
+                <img src="./images/dvin.jpg" alt="">
+            </div>
+            <a href="https://yandex.com/maps/-/CHUXR-Jw" target="_blank" class="how-to-reach">
+                Ինչպես հասնել
+            </a>
+
+        </div>
+
+        <div class="countdown-sec">
+
+            <h2 class="countdown-title">Հարսանիքին մնաց՝</h2>
+            <div id="countdown">
+                <div class="countdown-item">
+                    <p id="days">00</p> <span>ՕՐ</span>
                 </div>
-                <span class="address">հասցե՝ Էջմիածին
-                    Աշտարակի խճուղի, 1 շենք</span>
-                <div class="place-photo">
-                    <img src="./images/dvin.jpg" alt="">
+                <div class="countdown-item">
+                    <p id="hours">00</p> <span>ԺԱՄ</span>
                 </div>
-                <a href="https://yandex.com/maps/-/CHUXR-Jw" target="_blank" class="how-to-reach">
-                    Ինչպես հասնել
-                </a>
+                <div class="countdown-item">
+                    <p id="minutes">00</p> <span>ՐՈՊԵ</span>
+                </div>
+                <div class="countdown-item">
+                    <p id="seconds">00</p> <span>ՎՐԿ</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h2>Հաստատեք ձեր ներկայությունը</h2>
+            <div class="confirm">
+                <div class="input">
+                    <input type="text" required id="guestName" placeholder="Գրեք ձեր անունը">
+                </div>
+                <div class="yesNo">
+                    <label for="yes"> <input type="radio" required value="yes" name="yesno" id="yes">Գալու եմ</label>
+                    <label for="no"> <input type="radio" required value="no" name="yesno" id="no"> Չեմ կարող գալ</label>
+                </div>
+                <button class="confBtn" id="sendEmail">
+                    Հաստատել
+                </button>
 
             </div>
+        </footer>
 
-            <div class="countdown-sec">
+        <script src="./index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-                <h2 class="countdown-title">Հարսանիքին մնաց՝</h2>
-                <div id="countdown">
-                    <div class="countdown-item">
-                        <p id="days">00</p> <span>ՕՐ</span>
-                    </div>
-                    <div class="countdown-item">
-                        <p id="hours">00</p> <span>ԺԱՄ</span>
-                    </div>
-                    <div class="countdown-item">
-                        <p id="minutes">00</p> <span>ՐՈՊԵ</span>
-                    </div>
-                    <div class="countdown-item">
-                        <p id="seconds">00</p> <span>ՎՐԿ</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <script src="./index.js"></script>
 </body>
 
 </html>
