@@ -45,7 +45,7 @@ const interval = setInterval(() => {
 }, 1000);
 
 document.addEventListener("DOMContentLoaded", function () {
-  emailjs.init("zUojn6FauoICty7qS");
+  emailjs.init("sjaz7NxqvIDD_A0iU");
 
   document.getElementById("sendEmail").addEventListener("click", function () {
     let guestName = document.querySelector("#guestName");
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
       behavior: "smooth",
     });
 
-    emailjs.send("service_1ssajei", "template_koczw9e", templateParams).then(
+    emailjs.send("service_5mdm7ag", "template_ftl7xqb", templateParams).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
         alert("հաջողությամբ հաստատվեց!");
