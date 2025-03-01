@@ -43,7 +43,7 @@ header {
   color: #323232;
 }
 .names {
-  font-size: clamp(1rem, 10vw, 4rem);
+  font-size: clamp(2rem, 12vw, 4rem);
   text-shadow: #e5e7eb 1px 0 10px;
 }
 .date {
