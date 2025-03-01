@@ -177,6 +177,7 @@ input[type=radio], label {
 input[type=radio]{
   width: 25px;
   height: 25px;
+ accent-color: #323232;
 }
 .yesNo label {
   font-size: 30px;
@@ -187,6 +188,8 @@ input[type=radio]{
   border-radius: 10px;
   cursor: pointer;
   font-size: 25px;
+  background-color: #323232;
+  color: #fff;
 }
 
 @media screen and (min-width: 700px) {
