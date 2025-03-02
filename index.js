@@ -46,34 +46,50 @@ const interval = setInterval(() => {
 
 document.addEventListener("DOMContentLoaded", function () {
   emailjs.init("sjaz7NxqvIDD_A0iU");
+  let yesRadio = document.getElementById("yes");
+  let noRadio = document.getElementById("no");
+
+  function toggleSelect() {
+    guestCount.disabled = !yesRadio.checked;
+  }
+
+  yesRadio.addEventListener("change", toggleSelect);
+  noRadio.addEventListener("change", toggleSelect);
 
   document.getElementById("sendEmail").addEventListener("click", function () {
     let guestName = document.querySelector("#guestName");
     let yesOrNo = document.querySelector('input[name="yesno"]:checked');
-    yesOrNo.checked = false;
-    let templateParams = {
-      name: guestName.value,
-      message: `${
-        yesOrNo.value === "yes" ? "Գալու ենք " : "չենք կարողանա գալ"
-      }`,
-    };
-    console.log(templateParams);
-    guestName.value = "";
-    yesOrNo.checked = false;
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
 
-    emailjs.send("service_5mdm7ag", "template_ftl7xqb", templateParams).then(
-      function (response) {
-        console.log("SUCCESS!", response.status, response.text);
-        alert("հաջողությամբ հաստատվեց!");
-      },
-      function (error) {
-        console.log("FAILED...", error);
-        // alert("Սխալ տեղի ունեցավ!");
-      }
-    );
+    let guestCount = document.querySelector("#guestCount");
+
+    if (yesOrNo && guestName.value.length > 0) {
+      let templateParams = {
+        name: guestName.value,
+        message: `${
+          yesOrNo.value === "yes" ? "Գալու ենք " : "չենք կարողանա գալ"
+        }`,
+        guestCount: `${yesOrNo.value === "yes" ? "Հյուրերի քանակ - " + guestCount.value : ""}`,
+      };
+      console.log(templateParams);
+      guestName.value = "";
+      yesOrNo.checked = false;
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+      emailjs.send("service_5mdm7ag", "template_ftl7xqb", templateParams).then(
+        function (response) {
+          // console.log("SUCCESS!", response.status, response.text);
+          alert("հաջողությամբ հաստատվեց!");
+        },
+        function (error) {
+          console.log("FAILED...", error);
+          // alert("Սխալ տեղի ունեցավ!");
+        }
+      );
+    } else {
+      alert("Խնդրում ենք լրացնել բոլոր դաշտերը");
+    }
   });
 });
